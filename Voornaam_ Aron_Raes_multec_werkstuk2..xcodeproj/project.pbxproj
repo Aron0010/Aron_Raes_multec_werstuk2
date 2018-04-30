@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C54789F20970BA50096E8E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C54789E20970BA50096E8E2 /* AppDelegate.swift */; };
+		9C5478A120970BA50096E8E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5478A020970BA50096E8E2 /* ViewController.swift */; };
+		9C5478A420970BA50096E8E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C5478A220970BA50096E8E2 /* Main.storyboard */; };
+		9C5478A720970BA60096E8E2 /* Voornaam__Aron_Raes_multec_werkstuk2_.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9C5478A520970BA60096E8E2 /* Voornaam__Aron_Raes_multec_werkstuk2_.xcdatamodeld */; };
+		9C5478A920970BA90096E8E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C5478A820970BA90096E8E2 /* Assets.xcassets */; };
+		9C5478AC20970BA90096E8E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C5478AA20970BA90096E8E2 /* LaunchScreen.storyboard */; };
+		9C5478B720970BA90096E8E2 /* Voornaam__Aron_Raes_multec_werkstuk2_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5478B620970BA90096E8E2 /* Voornaam__Aron_Raes_multec_werkstuk2_Tests.swift */; };
+		9C5478C220970BA90096E8E2 /* Voornaam__Aron_Raes_multec_werkstuk2_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5478C120970BA90096E8E2 /* Voornaam__Aron_Raes_multec_werkstuk2_UITests.swift */; };
+		9C5478D0209710E80096E8E2 /* ReadMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5478CF209710E80096E8E2 /* ReadMe.swift */; };
+		9C5478D32097138B0096E8E2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C5478D22097138B0096E8E2 /* MapKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9C5478B320970BA90096E8E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C54789320970BA50096E8E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C54789A20970BA50096E8E2;
+			remoteInfo = "Voornaam_ Aron_Raes_multec_werkstuk2.";
+		};
+		9C5478BE20970BA90096E8E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C54789320970BA50096E8E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C54789A20970BA50096E8E2;
+			remoteInfo = "Voornaam_ Aron_Raes_multec_werkstuk2.";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9C54789B20970BA50096E8E2 /* Voornaam_ Aron_Raes_multec_werkstuk2..app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Voornaam_ Aron_Raes_multec_werkstuk2..app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C54789E20970BA50096E8E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9C5478A020970BA50096E8E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9C5478A320970BA50096E8E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9C5478A620970BA60096E8E2 /* Voornaam__Aron_Raes_multec_werkstuk2_.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Voornaam__Aron_Raes_multec_werkstuk2_.xcdatamodel; sourceTree = "<group>"; };
+		9C5478A820970BA90096E8E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9C5478AB20970BA90096E8E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9C5478AD20970BA90096E8E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C5478B220970BA90096E8E2 /* Voornaam_ Aron_Raes_multec_werkstuk2.Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Voornaam_ Aron_Raes_multec_werkstuk2.Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C5478B620970BA90096E8E2 /* Voornaam__Aron_Raes_multec_werkstuk2_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voornaam__Aron_Raes_multec_werkstuk2_Tests.swift; sourceTree = "<group>"; };
+		9C5478B820970BA90096E8E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C5478BD20970BA90096E8E2 /* Voornaam_ Aron_Raes_multec_werkstuk2.UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Voornaam_ Aron_Raes_multec_werkstuk2.UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C5478C120970BA90096E8E2 /* Voornaam__Aron_Raes_multec_werkstuk2_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voornaam__Aron_Raes_multec_werkstuk2_UITests.swift; sourceTree = "<group>"; };
+		9C5478C320970BA90096E8E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C5478CF209710E80096E8E2 /* ReadMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadMe.swift; sourceTree = "<group>"; };
+		9C5478D22097138B0096E8E2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9C54789820970BA50096E8E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C5478D32097138B0096E8E2 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C5478AF20970BA90096E8E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C5478BA20970BA90096E8E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9C54789220970BA50096E8E2 = {
+			isa = PBXGroup;
+			children = (
+				9C54789D20970BA50096E8E2 /* Voornaam_ Aron_Raes_multec_werkstuk2. */,
+				9C5478B520970BA90096E8E2 /* Voornaam_ Aron_Raes_multec_werkstuk2.Tests */,
+				9C5478C020970BA90096E8E2 /* Voornaam_ Aron_Raes_multec_werkstuk2.UITests */,
+				9C54789C20970BA50096E8E2 /* Products */,
+				9C5478D12097138B0096E8E2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9C54789C20970BA50096E8E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C54789B20970BA50096E8E2 /* Voornaam_ Aron_Raes_multec_werkstuk2..app */,
+				9C5478B220970BA90096E8E2 /* Voornaam_ Aron_Raes_multec_werkstuk2.Tests.xctest */,
+				9C5478BD20970BA90096E8E2 /* Voornaam_ Aron_Raes_multec_werkstuk2.UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C54789D20970BA50096E8E2 /* Voornaam_ Aron_Raes_multec_werkstuk2. */ = {
+			isa = PBXGroup;
+			children = (
+				9C54789E20970BA50096E8E2 /* AppDelegate.swift */,
+				9C5478A020970BA50096E8E2 /* ViewController.swift */,
+				9C5478A220970BA50096E8E2 /* Main.storyboard */,
+				9C5478A820970BA90096E8E2 /* Assets.xcassets */,
+				9C5478AA20970BA90096E8E2 /* LaunchScreen.storyboard */,
+				9C5478AD20970BA90096E8E2 /* Info.plist */,
+				9C5478A520970BA60096E8E2 /* Voornaam__Aron_Raes_multec_werkstuk2_.xcdatamodeld */,
+				9C5478CF209710E80096E8E2 /* ReadMe.swift */,
+			);
+			path = "Voornaam_ Aron_Raes_multec_werkstuk2.";
+			sourceTree = "<group>";
+		};
+		9C5478B520970BA90096E8E2 /* Voornaam_ Aron_Raes_multec_werkstuk2.Tests */ = {
+			isa = PBXGroup;
+			children = (
+				9C5478B620970BA90096E8E2 /* Voornaam__Aron_Raes_multec_werkstuk2_Tests.swift */,
+				9C5478B820970BA90096E8E2 /* Info.plist */,
+			);
+			path = "Voornaam_ Aron_Raes_multec_werkstuk2.Tests";
+			sourceTree = "<group>";
+		};
+		9C5478C020970BA90096E8E2 /* Voornaam_ Aron_Raes_multec_werkstuk2.UITests */ = {
+			isa = PBXGroup;
+			children = (
+				9C5478C120970BA90096E8E2 /* Voornaam__Aron_Raes_multec_werkstuk2_UITests.swift */,
+				9C5478C320970BA90096E8E2 /* Info.plist */,
+			);
+			path = "Voornaam_ Aron_Raes_multec_werkstuk2.UITests";
+			sourceTree = "<group>";
+		};
+		9C5478D12097138B0096E8E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C5478D22097138B0096E8E2 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9C54789A20970BA50096E8E2 /* Voornaam_ Aron_Raes_multec_werkstuk2. */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C5478C620970BA90096E8E2 /* Build configuration list for PBXNativeTarget "Voornaam_ Aron_Raes_multec_werkstuk2." */;
+			buildPhases = (
+				9C54789720970BA50096E8E2 /* Sources */,
+				9C54789820970BA50096E8E2 /* Frameworks */,
+				9C54789920970BA50096E8E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Voornaam_ Aron_Raes_multec_werkstuk2.";
+			productName = "Voornaam_ Aron_Raes_multec_werkstuk2.";
+			productReference = 9C54789B20970BA50096E8E2 /* Voornaam_ Aron_Raes_multec_werkstuk2..app */;
+			productType = "com.apple.product-type.application";
+		};
+		9C5478B120970BA90096E8E2 /* Voornaam_ Aron_Raes_multec_werkstuk2.Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C5478C920970BA90096E8E2 /* Build configuration list for PBXNativeTarget "Voornaam_ Aron_Raes_multec_werkstuk2.Tests" */;
+			buildPhases = (
+				9C5478AE20970BA90096E8E2 /* Sources */,
+				9C5478AF20970BA90096E8E2 /* Frameworks */,
+				9C5478B020970BA90096E8E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C5478B420970BA90096E8E2 /* PBXTargetDependency */,
+			);
+			name = "Voornaam_ Aron_Raes_multec_werkstuk2.Tests";
+			productName = "Voornaam_ Aron_Raes_multec_werkstuk2.Tests";
+			productReference = 9C5478B220970BA90096E8E2 /* Voornaam_ Aron_Raes_multec_werkstuk2.Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9C5478BC20970BA90096E8E2 /* Voornaam_ Aron_Raes_multec_werkstuk2.UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C5478CC20970BA90096E8E2 /* Build configuration list for PBXNativeTarget "Voornaam_ Aron_Raes_multec_werkstuk2.UITests" */;
+			buildPhases = (
+				9C5478B920970BA90096E8E2 /* Sources */,
+				9C5478BA20970BA90096E8E2 /* Frameworks */,
+				9C5478BB20970BA90096E8E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C5478BF20970BA90096E8E2 /* PBXTargetDependency */,
+			);
+			name = "Voornaam_ Aron_Raes_multec_werkstuk2.UITests";
+			productName = "Voornaam_ Aron_Raes_multec_werkstuk2.UITests";
+			productReference = 9C5478BD20970BA90096E8E2 /* Voornaam_ Aron_Raes_multec_werkstuk2.UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9C54789320970BA50096E8E2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Aron Raes";
+				TargetAttributes = {
+					9C54789A20970BA50096E8E2 = {
+						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					9C5478B120970BA90096E8E2 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 9C54789A20970BA50096E8E2;
+					};
+					9C5478BC20970BA90096E8E2 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 9C54789A20970BA50096E8E2;
+					};
+				};
+			};
+			buildConfigurationList = 9C54789620970BA50096E8E2 /* Build configuration list for PBXProject "Voornaam_ Aron_Raes_multec_werkstuk2." */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9C54789220970BA50096E8E2;
+			productRefGroup = 9C54789C20970BA50096E8E2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9C54789A20970BA50096E8E2 /* Voornaam_ Aron_Raes_multec_werkstuk2. */,
+				9C5478B120970BA90096E8E2 /* Voornaam_ Aron_Raes_multec_werkstuk2.Tests */,
+				9C5478BC20970BA90096E8E2 /* Voornaam_ Aron_Raes_multec_werkstuk2.UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9C54789920970BA50096E8E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C5478AC20970BA90096E8E2 /* LaunchScreen.storyboard in Resources */,
+				9C5478A920970BA90096E8E2 /* Assets.xcassets in Resources */,
+				9C5478A420970BA50096E8E2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C5478B020970BA90096E8E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C5478BB20970BA90096E8E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9C54789720970BA50096E8E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C5478A120970BA50096E8E2 /* ViewController.swift in Sources */,
+				9C5478D0209710E80096E8E2 /* ReadMe.swift in Sources */,
+				9C54789F20970BA50096E8E2 /* AppDelegate.swift in Sources */,
+				9C5478A720970BA60096E8E2 /* Voornaam__Aron_Raes_multec_werkstuk2_.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C5478AE20970BA90096E8E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C5478B720970BA90096E8E2 /* Voornaam__Aron_Raes_multec_werkstuk2_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C5478B920970BA90096E8E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C5478C220970BA90096E8E2 /* Voornaam__Aron_Raes_multec_werkstuk2_UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9C5478B420970BA90096E8E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C54789A20970BA50096E8E2 /* Voornaam_ Aron_Raes_multec_werkstuk2. */;
+			targetProxy = 9C5478B320970BA90096E8E2 /* PBXContainerItemProxy */;
+		};
+		9C5478BF20970BA90096E8E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C54789A20970BA50096E8E2 /* Voornaam_ Aron_Raes_multec_werkstuk2. */;
+			targetProxy = 9C5478BE20970BA90096E8E2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9C5478A220970BA50096E8E2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C5478A320970BA50096E8E2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9C5478AA20970BA90096E8E2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C5478AB20970BA90096E8E2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9C5478C420970BA90096E8E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9C5478C520970BA90096E8E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9C5478C720970BA90096E8E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Voornaam_ Aron_Raes_multec_werkstuk2./Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ehb.werkstuk2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9C5478C820970BA90096E8E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Voornaam_ Aron_Raes_multec_werkstuk2./Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ehb.werkstuk2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9C5478CA20970BA90096E8E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Voornaam_ Aron_Raes_multec_werkstuk2.Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ehb.Voornaam--Aron-Raes-multec-werkstuk2-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Voornaam_ Aron_Raes_multec_werkstuk2..app/Voornaam_ Aron_Raes_multec_werkstuk2.";
+			};
+			name = Debug;
+		};
+		9C5478CB20970BA90096E8E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Voornaam_ Aron_Raes_multec_werkstuk2.Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ehb.Voornaam--Aron-Raes-multec-werkstuk2-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Voornaam_ Aron_Raes_multec_werkstuk2..app/Voornaam_ Aron_Raes_multec_werkstuk2.";
+			};
+			name = Release;
+		};
+		9C5478CD20970BA90096E8E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Voornaam_ Aron_Raes_multec_werkstuk2.UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ehb.Voornaam--Aron-Raes-multec-werkstuk2-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Voornaam_ Aron_Raes_multec_werkstuk2.";
+			};
+			name = Debug;
+		};
+		9C5478CE20970BA90096E8E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Voornaam_ Aron_Raes_multec_werkstuk2.UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ehb.Voornaam--Aron-Raes-multec-werkstuk2-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Voornaam_ Aron_Raes_multec_werkstuk2.";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9C54789620970BA50096E8E2 /* Build configuration list for PBXProject "Voornaam_ Aron_Raes_multec_werkstuk2." */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C5478C420970BA90096E8E2 /* Debug */,
+				9C5478C520970BA90096E8E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C5478C620970BA90096E8E2 /* Build configuration list for PBXNativeTarget "Voornaam_ Aron_Raes_multec_werkstuk2." */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C5478C720970BA90096E8E2 /* Debug */,
+				9C5478C820970BA90096E8E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C5478C920970BA90096E8E2 /* Build configuration list for PBXNativeTarget "Voornaam_ Aron_Raes_multec_werkstuk2.Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C5478CA20970BA90096E8E2 /* Debug */,
+				9C5478CB20970BA90096E8E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C5478CC20970BA90096E8E2 /* Build configuration list for PBXNativeTarget "Voornaam_ Aron_Raes_multec_werkstuk2.UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C5478CD20970BA90096E8E2 /* Debug */,
+				9C5478CE20970BA90096E8E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9C5478A520970BA60096E8E2 /* Voornaam__Aron_Raes_multec_werkstuk2_.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9C5478A620970BA60096E8E2 /* Voornaam__Aron_Raes_multec_werkstuk2_.xcdatamodel */,
+			);
+			currentVersion = 9C5478A620970BA60096E8E2 /* Voornaam__Aron_Raes_multec_werkstuk2_.xcdatamodel */;
+			path = Voornaam__Aron_Raes_multec_werkstuk2_.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9C54789320970BA50096E8E2 /* Project object */;
+}
