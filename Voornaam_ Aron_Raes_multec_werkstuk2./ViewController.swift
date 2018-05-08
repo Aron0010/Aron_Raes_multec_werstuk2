@@ -25,12 +25,13 @@ class ViewController: UIViewController, MKMapViewDelegate,CLLocationManagerDeleg
 
     @IBOutlet weak var myMapView: MKMapView!
     
+    @IBOutlet weak var lblDateTime: UILabel!
     var locationManager = CLLocationManager()
     
     var opgehaaldeVilloStations:[VilloStation] = []
     
     @IBAction func refreshButton(_ sender: UIBarButtonItem) {
-        refreshdata()
+        self.refreshdata()
     }
     
     
@@ -40,30 +41,36 @@ class ViewController: UIViewController, MKMapViewDelegate,CLLocationManagerDeleg
         //controleren of gegevens al opgehaald zijn link:https://stackoverflow.com/questions/27208103/detect-first-launch-of-ios-app?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
         let launch = UserDefaults.standard.bool(forKey: "launchbefore")
         if !launch{
-            self.haalDataOp()
+            self.refreshdata()
+            
         }else{
             self.tone()
         }
         
-        //locatie services authenticatie
-        locationManager.requestAlwaysAuthorization()
-        locationManager.startUpdatingLocation()
-        self.locationManager.requestWhenInUseAuthorization()
+        //zoomen naar eigen locatie link: https://stackoverflow.com/questions/41189147/mapkit-zoom-to-user-current-location?answertab=active#tab-top
         
-        if CLLocationManager.locationServicesEnabled() {
+        myMapView.delegate = self
+        myMapView.showsUserLocation = true
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.delegate = self
+        
+        //Check for Location Services
+        if (CLLocationManager.locationServicesEnabled()) {
+            locationManager = CLLocationManager()
             locationManager.delegate = self
             locationManager.desiredAccuracy = kCLLocationAccuracyBest
+            locationManager.requestAlwaysAuthorization()
+            locationManager.requestWhenInUseAuthorization()
+        }
+        locationManager.requestWhenInUseAuthorization()
+        if CLLocationManager.locationServicesEnabled() {
             locationManager.startUpdatingLocation()
         }
+        //Zoom to user location
+         let noLocation = locationManager.location?.coordinate
+        let viewRegion = MKCoordinateRegionMakeWithDistance(noLocation!, 2000, 2000)
+        myMapView.setRegion(viewRegion, animated: false)
         
-        //standaard fucties map aanzetten
-        myMapView.delegate = self
-        myMapView.mapType = .standard
-        myMapView.isZoomEnabled = true
-        myMapView.isScrollEnabled = true
-        if let coor = myMapView.userLocation.location?.coordinate{
-            myMapView.setCenter(coor, animated: true)
-        }
 }
     
     
@@ -96,6 +103,7 @@ class ViewController: UIViewController, MKMapViewDelegate,CLLocationManagerDeleg
           // Error Handling
               // ...
           }
+        
          self.haalDataOp()
     }
     
@@ -148,8 +156,8 @@ class ViewController: UIViewController, MKMapViewDelegate,CLLocationManagerDeleg
                     villoStation.aantalSlots = Int16(aantalSlots)
                     villoStation.aantalSlotsBeschikbaar = Int16(aantalSlotsBeschikbaar)
                     villoStation.aantalFietsen = Int16(aantalFietsen)
-                    villoStation.latitiude = latitude!
-                    villoStation.longitude = longitude!
+                    villoStation.latitiude = (latitude)!
+                    villoStation.longitude = (longitude)!
                 
                     do{
                         try self.managedContext?.save()
@@ -158,6 +166,7 @@ class ViewController: UIViewController, MKMapViewDelegate,CLLocationManagerDeleg
                         fatalError("Failure tosave context: \(error)")
                     }
                 }
+                
                 self.tone()
             }
             
@@ -171,6 +180,7 @@ class ViewController: UIViewController, MKMapViewDelegate,CLLocationManagerDeleg
     
             func tone(){
                  DispatchQueue.main.async{
+                    self.getTodayString()
                 //gegevens uilezen van coredata
                 let villoStationFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "VilloStation")
                 do{
@@ -222,7 +232,6 @@ class ViewController: UIViewController, MKMapViewDelegate,CLLocationManagerDeleg
         if control == view.rightCalloutAccessoryView {
             let detailViewController = self.storyboard?.instantiateViewController(withIdentifier: "detailViewControllerId") as! DetailsViewController
             detailViewController.naam = (view.annotation?.title)!
-            //detailViewController.fhsdjk = (view.annotation?.title)!
             self.navigationController?.pushViewController(detailViewController, animated: true)
             
         }
@@ -231,6 +240,32 @@ class ViewController: UIViewController, MKMapViewDelegate,CLLocationManagerDeleg
     
      /* -----------------------------------------------------------  */
     
+    
+    //datum ophalen voor wanneer de core data is geupdate link: https://stackoverflow.com/questions/43199635/get-current-time-as-string-swift-3-0/43199769
+    
+    // Get today date as String
+    
+    func getTodayString(){
+        
+        let date = Date()
+        let calender = Calendar.current
+        let components = calender.dateComponents([.year,.month,.day,.hour,.minute,.second], from: date)
+        
+        let year = components.year
+        let month = components.month
+        let day = components.day
+        let hour = components.hour
+        let minute = components.minute
+        let second = components.second
+        
+        let today_string =  String(hour!)  + ":" + String(minute!) + ":" +  String(second!) + " " + String(day!)  + "-" + String(month!) + "-" + String(year!)
+        
+        self.lblDateTime.text = today_string
+    
+    }
+    
+    /* -----------------------------------------------------------  */
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

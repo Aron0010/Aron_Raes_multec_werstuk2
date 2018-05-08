@@ -18,6 +18,8 @@
 		9C5478D0209710E80096E8E2 /* ReadMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5478CF209710E80096E8E2 /* ReadMe.swift */; };
 		9C5478D32097138B0096E8E2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C5478D22097138B0096E8E2 /* MapKit.framework */; };
 		9C5478D720A05AD30096E8E2 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5478D620A05AD30096E8E2 /* DetailsViewController.swift */; };
+		9C5478DB20A1D7A00096E8E2 /* LijstTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5478DA20A1D7A00096E8E2 /* LijstTableViewController.swift */; };
+		9C5478DF20A1E1A40096E8E2 /* DetailTableItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5478DE20A1E1A40096E8E2 /* DetailTableItemViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		9C5478CF209710E80096E8E2 /* ReadMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadMe.swift; sourceTree = "<group>"; };
 		9C5478D22097138B0096E8E2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		9C5478D620A05AD30096E8E2 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		9C5478DA20A1D7A00096E8E2 /* LijstTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LijstTableViewController.swift; sourceTree = "<group>"; };
+		9C5478DE20A1E1A40096E8E2 /* DetailTableItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableItemViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,8 @@
 				9C5478A520970BA60096E8E2 /* Voornaam__Aron_Raes_multec_werkstuk2_.xcdatamodeld */,
 				9C5478CF209710E80096E8E2 /* ReadMe.swift */,
 				9C5478D620A05AD30096E8E2 /* DetailsViewController.swift */,
+				9C5478DA20A1D7A00096E8E2 /* LijstTableViewController.swift */,
+				9C5478DE20A1E1A40096E8E2 /* DetailTableItemViewController.swift */,
 			);
 			path = "Voornaam_ Aron_Raes_multec_werkstuk2.";
 			sourceTree = "<group>";
@@ -284,6 +290,8 @@
 			files = (
 				9C5478A120970BA50096E8E2 /* ViewController.swift in Sources */,
 				9C5478D0209710E80096E8E2 /* ReadMe.swift in Sources */,
+				9C5478DF20A1E1A40096E8E2 /* DetailTableItemViewController.swift in Sources */,
+				9C5478DB20A1D7A00096E8E2 /* LijstTableViewController.swift in Sources */,
 				9C54789F20970BA50096E8E2 /* AppDelegate.swift in Sources */,
 				9C5478A720970BA60096E8E2 /* Voornaam__Aron_Raes_multec_werkstuk2_.xcdatamodeld in Sources */,
 				9C5478D720A05AD30096E8E2 /* DetailsViewController.swift in Sources */,

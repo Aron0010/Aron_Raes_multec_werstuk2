@@ -15,16 +15,18 @@ class DetailsViewController: UIViewController {
     var maxAantalFietsen: Int?
     var latitude: Double?
     var longitude: Double?
+    @IBOutlet weak var lblNaam: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         print(naam!)
+         self.lblNaam.text = naam
         // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-       
+      
     }
     
 
