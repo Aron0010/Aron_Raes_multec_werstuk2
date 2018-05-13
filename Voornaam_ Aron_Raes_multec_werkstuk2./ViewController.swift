@@ -68,7 +68,7 @@ class ViewController: UIViewController, MKMapViewDelegate,CLLocationManagerDeleg
         }
         //Zoom to user location
          let noLocation = locationManager.location?.coordinate
-        let viewRegion = MKCoordinateRegionMakeWithDistance(noLocation!, 2000, 2000)
+        let viewRegion = MKCoordinateRegionMakeWithDistance(noLocation!, 300, 300)
         myMapView.setRegion(viewRegion, animated: false)
         
 }
@@ -103,7 +103,7 @@ class ViewController: UIViewController, MKMapViewDelegate,CLLocationManagerDeleg
           // Error Handling
               // ...
           }
-        
+       
          self.haalDataOp()
     }
     
@@ -111,7 +111,7 @@ class ViewController: UIViewController, MKMapViewDelegate,CLLocationManagerDeleg
        /* -----------------------------------------------------------  */
     
     
-    
+    //komt uit de lessen/slides
     func haalDataOp(){
         
         //url request
@@ -158,14 +158,15 @@ class ViewController: UIViewController, MKMapViewDelegate,CLLocationManagerDeleg
                     villoStation.aantalFietsen = Int16(aantalFietsen)
                     villoStation.latitiude = (latitude)!
                     villoStation.longitude = (longitude)!
-                
+                }
                     do{
                         try self.managedContext?.save()
                         
-                    } catch{
+                   }
+                       catch{
                         fatalError("Failure tosave context: \(error)")
                     }
-                }
+                
                 
                 self.tone()
             }
@@ -177,7 +178,7 @@ class ViewController: UIViewController, MKMapViewDelegate,CLLocationManagerDeleg
             
                 /* -----------------------------------------------------------  */
     
-    
+    //gemaakt via de slides en de lessen
             func tone(){
                  DispatchQueue.main.async{
                     self.getTodayString()
@@ -207,18 +208,33 @@ class ViewController: UIViewController, MKMapViewDelegate,CLLocationManagerDeleg
         
         //pins met annotation callout link: https://stackoverflow.com/questions/33978455/swift-how-do-i-make-a-pin-annotation-callout-full-steps-please
         
+        
+        //eigen pins plaatsen link : https://stackoverflow.com/questions/33262759/size-image-pin-annotation/33272038
+        
+        //probleem met CG size oplossen link: https://stackoverflow.com/questions/37946990/cgrectmake-cgpointmake-cgsizemake-cgrectzero-cgpointzero-is-unavailable-in-s
         //eigen locatie op de map plaatsen
       
         if annotation is MKUserLocation { return nil }
         
-        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: "annotationView") as? MKPinAnnotationView
+        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: "annotationView")
         if annotationView == nil {
-            annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: "annotationView")
+            annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: "annotationView")
             annotationView?.canShowCallout = true
             annotationView?.rightCalloutAccessoryView = UIButton(type: .infoLight)
         } else {
             annotationView?.annotation = annotation
         }
+        
+        let pinImage = UIImage(named: "car")
+        let size = CGSize(width: 50, height: 50)
+        UIGraphicsBeginImageContext(size)
+        let rect = CGRect(origin: CGPoint(x: 0,y :0), size: CGSize(width: size.width, height: size.height))
+        pinImage!.draw(in: rect)
+        let resizedImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        annotationView?.image = resizedImage
+        //annotationView!.image = pinImage
         
         return annotationView
     }
@@ -231,15 +247,17 @@ class ViewController: UIViewController, MKMapViewDelegate,CLLocationManagerDeleg
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         if control == view.rightCalloutAccessoryView {
             let detailViewController = self.storyboard?.instantiateViewController(withIdentifier: "detailViewControllerId") as! DetailsViewController
-            detailViewController.naam = (view.annotation?.title)!
-            self.navigationController?.pushViewController(detailViewController, animated: true)
-            
+            print("test")
+            detailViewController.Naam = ((view.annotation?.title)!)!
+           
+                   self.navigationController?.pushViewController(detailViewController, animated: true)
         }
+
     }
     
     
+
      /* -----------------------------------------------------------  */
-    
     
     //datum ophalen voor wanneer de core data is geupdate link: https://stackoverflow.com/questions/43199635/get-current-time-as-string-swift-3-0/43199769
     
@@ -256,15 +274,17 @@ class ViewController: UIViewController, MKMapViewDelegate,CLLocationManagerDeleg
         let day = components.day
         let hour = components.hour
         let minute = components.minute
-        let second = components.second
+      
         
-        let today_string =  String(hour!)  + ":" + String(minute!) + ":" +  String(second!) + " " + String(day!)  + "-" + String(month!) + "-" + String(year!)
+        let today_string =  String(day!) + "-" + String(month!) + "-" + String(year!) + " "  + String(hour!)  + ":" + String(minute!) 
         
         self.lblDateTime.text = today_string
     
     }
     
     /* -----------------------------------------------------------  */
+
+    
 
     
     override func didReceiveMemoryWarning() {

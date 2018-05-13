@@ -17,9 +17,9 @@
 		9C5478C220970BA90096E8E2 /* Voornaam__Aron_Raes_multec_werkstuk2_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5478C120970BA90096E8E2 /* Voornaam__Aron_Raes_multec_werkstuk2_UITests.swift */; };
 		9C5478D0209710E80096E8E2 /* ReadMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5478CF209710E80096E8E2 /* ReadMe.swift */; };
 		9C5478D32097138B0096E8E2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C5478D22097138B0096E8E2 /* MapKit.framework */; };
-		9C5478D720A05AD30096E8E2 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5478D620A05AD30096E8E2 /* DetailsViewController.swift */; };
 		9C5478DB20A1D7A00096E8E2 /* LijstTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5478DA20A1D7A00096E8E2 /* LijstTableViewController.swift */; };
 		9C5478DF20A1E1A40096E8E2 /* DetailTableItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5478DE20A1E1A40096E8E2 /* DetailTableItemViewController.swift */; };
+		9CC63B0B20A89D0100EF21AC /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC63B0A20A89D0100EF21AC /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,9 +56,11 @@
 		9C5478C320970BA90096E8E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C5478CF209710E80096E8E2 /* ReadMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadMe.swift; sourceTree = "<group>"; };
 		9C5478D22097138B0096E8E2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		9C5478D620A05AD30096E8E2 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		9C5478DA20A1D7A00096E8E2 /* LijstTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LijstTableViewController.swift; sourceTree = "<group>"; };
 		9C5478DE20A1E1A40096E8E2 /* DetailTableItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableItemViewController.swift; sourceTree = "<group>"; };
+		9CC63B0320A34DEB00EF21AC /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		9CC63B0A20A89D0100EF21AC /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		9CC63B0D20A8B83900EF21AC /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,9 +121,9 @@
 				9C5478AD20970BA90096E8E2 /* Info.plist */,
 				9C5478A520970BA60096E8E2 /* Voornaam__Aron_Raes_multec_werkstuk2_.xcdatamodeld */,
 				9C5478CF209710E80096E8E2 /* ReadMe.swift */,
-				9C5478D620A05AD30096E8E2 /* DetailsViewController.swift */,
 				9C5478DA20A1D7A00096E8E2 /* LijstTableViewController.swift */,
 				9C5478DE20A1E1A40096E8E2 /* DetailTableItemViewController.swift */,
+				9CC63B0A20A89D0100EF21AC /* DetailsViewController.swift */,
 			);
 			path = "Voornaam_ Aron_Raes_multec_werkstuk2.";
 			sourceTree = "<group>";
@@ -243,6 +245,7 @@
 			knownRegions = (
 				en,
 				Base,
+				nl,
 			);
 			mainGroup = 9C54789220970BA50096E8E2;
 			productRefGroup = 9C54789C20970BA50096E8E2 /* Products */;
@@ -292,9 +295,9 @@
 				9C5478D0209710E80096E8E2 /* ReadMe.swift in Sources */,
 				9C5478DF20A1E1A40096E8E2 /* DetailTableItemViewController.swift in Sources */,
 				9C5478DB20A1D7A00096E8E2 /* LijstTableViewController.swift in Sources */,
+				9CC63B0B20A89D0100EF21AC /* DetailsViewController.swift in Sources */,
 				9C54789F20970BA50096E8E2 /* AppDelegate.swift in Sources */,
 				9C5478A720970BA60096E8E2 /* Voornaam__Aron_Raes_multec_werkstuk2_.xcdatamodeld in Sources */,
-				9C5478D720A05AD30096E8E2 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +337,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				9C5478A320970BA50096E8E2 /* Base */,
+				9CC63B0D20A8B83900EF21AC /* nl */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -342,6 +346,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				9C5478AB20970BA90096E8E2 /* Base */,
+				9CC63B0320A34DEB00EF21AC /* nl */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -353,6 +358,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -413,6 +419,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

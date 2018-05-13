@@ -1,0 +1,57 @@
+
+/* Class = "UILabel"; text = "Available Bikes:"; ObjectID = "2k9-cJ-mAa"; */
+"2k9-cJ-mAa.text" = "Beschikbare Fietsen:";
+
+/* Class = "UINavigationItem"; title = "Map"; ObjectID = "3YS-RS-RS2"; */
+"3YS-RS-RS2.title" = "Kaart";
+
+/* Class = "UILabel"; text = "Naam"; ObjectID = "3vE-oQ-rhN"; */
+"3vE-oQ-rhN.text" = "Naam";
+
+/* Class = "UILabel"; text = "aantal slot"; ObjectID = "8pC-fb-sP7"; */
+"8pC-fb-sP7.text" = "aantal slot";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "94m-mu-JF9"; */
+"94m-mu-JF9.text" = "Titel";
+
+/* Class = "UILabel"; text = "Slots:"; ObjectID = "A9w-Gg-RG4"; */
+"A9w-Gg-RG4.text" = "Slots:";
+
+/* Class = "UILabel"; text = "Date changed"; ObjectID = "CiC-mo-cxs"; */
+"CiC-mo-cxs.text" = "Date veranderd";
+
+/* Class = "UILabel"; text = "Available Bikes:"; ObjectID = "NLj-ko-hJY"; */
+"NLj-ko-hJY.text" = "Beschikbare Fietsen:";
+
+/* Class = "UILabel"; text = "Available Slots:"; ObjectID = "ODb-0n-GcV"; */
+"ODb-0n-GcV.text" = "Beschikbare Slots:";
+
+/* Class = "UILabel"; text = "Name:"; ObjectID = "QqK-Vw-lbZ"; */
+"QqK-Vw-lbZ.text" = "Naam:";
+
+/* Class = "UILabel"; text = "aantal bes"; ObjectID = "VbN-WV-fCC"; */
+"VbN-WV-fCC.text" = "aantal bes";
+
+/* Class = "UILabel"; text = "Aantal slot bes"; ObjectID = "Xq7-wt-msB"; */
+"Xq7-wt-msB.text" = "Aantal slot bes";
+
+/* Class = "UILabel"; text = "Available Slots:"; ObjectID = "ZTj-Vg-HY8"; */
+"ZTj-Vg-HY8.text" = "Beschikbare Slots:";
+
+/* Class = "UILabel"; text = "aantal bes"; ObjectID = "aCe-Z6-Zz5"; */
+"aCe-Z6-Zz5.text" = "aantal bes";
+
+/* Class = "UILabel"; text = "Aantal slot bes"; ObjectID = "aFW-lS-Jig"; */
+"aFW-lS-Jig.text" = "Aantal slot bes";
+
+/* Class = "UILabel"; text = "aantal slot"; ObjectID = "e6N-Aa-q4E"; */
+"e6N-Aa-q4E.text" = "aantal slot";
+
+/* Class = "UILabel"; text = "Name:"; ObjectID = "lu2-e8-3rx"; */
+"lu2-e8-3rx.text" = "Naam:";
+
+/* Class = "UILabel"; text = "Naam"; ObjectID = "wjK-sO-O1T"; */
+"wjK-sO-O1T.text" = "Naam";
+
+/* Class = "UILabel"; text = "Slots:"; ObjectID = "zKU-MH-nyn"; */
+"zKU-MH-nyn.text" = "Slots:";

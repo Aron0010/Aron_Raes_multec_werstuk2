@@ -23,10 +23,10 @@ class DetailTableItemViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.lblNaam.text = "Naam: \((temp?.naam)!)"
-        self.lblAantalFietsenBeschikbaar.text = "Beschikbaare fietsen: \((temp?.aantalFietsen)!)"
-        self.lblAantalSlots.text = "Aantal slots: \((temp?.aantalSlots)!)"
-        self.lblAantalSlotsBeschikbaar.text = "Beschikbaare slots: \((temp?.aantalSlotsBeschikbaar)!)"
+        self.lblNaam.text = "\((temp?.naam)!)"
+        self.lblAantalFietsenBeschikbaar.text = "\((temp?.aantalFietsen)!)"
+        self.lblAantalSlots.text = "\((temp?.aantalSlots)!)"
+        self.lblAantalSlotsBeschikbaar.text = "\((temp?.aantalSlotsBeschikbaar)!)"
         
         locationManager.requestAlwaysAuthorization()
         locationManager.startUpdatingLocation()
@@ -40,11 +40,15 @@ class DetailTableItemViewController: UIViewController {
         
         
     }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
     
 
     /*
